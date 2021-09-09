@@ -1,15 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Layout from './components/Layout'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World, React.js!
-        </p>
-      </header>
+      <Header title="Header" description="Header description"/>
+      <Layout title="Layout 1" description="Layout 1 description"/>
+      <Layout title="Layout 2" description="Layout 2 description"/>
+      <Layout backgroundColor="red" title="Layout 3" description="Layout 3 description"/>
+      <Footer />
     </div>
   );
 }
